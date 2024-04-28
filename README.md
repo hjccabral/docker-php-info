@@ -9,4 +9,16 @@ Simple container for test purposes to show above info about enviorment.
 - Country IP Info
 - System Operation
 - Webserver
-- PHP Version 
+- PHP Version
+
+To build:
+
+```
+docker image build -t <name>:<tag> .
+``` 
+
+To run:
+
+```
+docker run -d -p 80:80 <name>:<tag>
+```
