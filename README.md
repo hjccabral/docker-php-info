@@ -25,14 +25,14 @@ docker run -d -p 80:80 <name>:<tag>
 
 Return in a simple cURL request:
 
-```html
-ext@DESKTOP-1A6NC2F:~/$ curl http://localhost
-<span style="font-size: 18px;"><b>INFO:</span><br></b>Container Name:<b> fa9bf0b7cad7
-</b><br>Container IP:<b> 172.17.0.4
-</b><br>Client IP:<b> 172.17.0.1
-</b><br>User agent:<b> curl/7.81.0
-</b><br>Sorry. Does not possible to find geolocation info.
-</b><br>Operarion System not identified
-Webserver:<b> Apache/2.4.59 (Debian)
-</b><br>PHP Version:<b> 8.3.7RC1</b><br>
+```bash
+ext@DESKTOP-1A6NC2F:~/docker-php-info$ curl --no-progress-meter http://localhost | html2text
+INFO:
+Container Name:fa9bf0b7cad7
+Container IP:172.17.0.4
+Client IP:172.17.0.1
+User agent:curl/7.81.0
+Sorry. Does not possible to find geolocation info.
+Operarion System not identified Webserver:Apache/2.4.59 (Debian)
+PHP Version:8.3.7RC1
 ```
